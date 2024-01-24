@@ -36,7 +36,7 @@ See [Yokai documentation](https://ankorstore.github.io/yokai).
 
 #### With GitHub
 
-You can also create your repository [using the GitHub template](https://github.com/new?template_name=yokai-worker-template&template_owner=ankorstore).
+You can create your repository [using the GitHub template](https://github.com/new?template_name=yokai-worker-template&template_owner=ankorstore).
 
 It will automatically rename your project resources and push them, this operation can take a few minutes.
 
