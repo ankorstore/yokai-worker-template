@@ -58,7 +58,7 @@ make fresh
 
 ### Usage
 
-The application core dashboard will be available on [http://localhost:8081](http://localhost:8081).
+Once ready, the application core dashboard will be available on [http://localhost:8081](http://localhost:8081).
 
 To see the [provided example worker](internal/worker/example.go) in action, simply run:
 
