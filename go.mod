@@ -4,7 +4,7 @@ go 1.20
 
 require (
 	github.com/ankorstore/yokai/config v1.1.0
-	github.com/ankorstore/yokai/fxcore v1.2.0
+	github.com/ankorstore/yokai/fxcore v1.3.0
 	github.com/ankorstore/yokai/fxworker v1.0.0
 	github.com/ankorstore/yokai/log v1.0.0
 	github.com/ankorstore/yokai/worker v1.0.0
