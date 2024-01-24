@@ -41,4 +41,4 @@ modules:
         enabled: true
 config:
   example-worker:
-    interval: 0.5
+    interval: 3
