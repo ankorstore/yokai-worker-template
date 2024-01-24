@@ -3,8 +3,3 @@ app:
 modules:
   log:
     output: console
-  trace:
-    processor:
-      type: stdout
-      options:
-        pretty: true
