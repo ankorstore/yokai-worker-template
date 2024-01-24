@@ -10,8 +10,8 @@
 * [Documentation](#documentation)
 * [Getting started](#getting-started)
   * [Installation](#installation)
-    * [With gonew](#with-gonew)
     * [With GitHub](#with-github)
+    * [With gonew](#with-gonew)
   * [Usage](#usage)
 * [Contents](#contents)
   * [Layout](#layout)
@@ -34,16 +34,6 @@ See [Yokai documentation](https://ankorstore.github.io/yokai).
 
 ### Installation
 
-#### With gonew
-
-You can install [gonew](https://go.dev/blog/gonew), and simply run:
-
-```shell
-gonew github.com/ankorstore/yokai-worker-template github.com/foo/bar
-cd bar
-make fresh
-```
-
 #### With GitHub
 
 You can also create your repository [using the GitHub template](https://github.com/new?template_name=yokai-worker-template&template_owner=ankorstore).
@@ -53,6 +43,16 @@ It will automatically rename your project resources and push them, this operatio
 Once ready, after cloning and going into your repository, simply run:
 
 ```shell
+make fresh
+```
+
+#### With gonew
+
+You can install [gonew](https://go.dev/blog/gonew), and simply run:
+
+```shell
+gonew github.com/ankorstore/yokai-worker-template github.com/foo/bar
+cd bar
 make fresh
 ```
 
