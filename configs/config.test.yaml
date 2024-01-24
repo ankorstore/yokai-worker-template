@@ -1,0 +1,11 @@
+app:
+  debug: true
+modules:
+  log:
+    output: test
+  trace:
+    processor:
+      type: test
+config:
+  example-worker:
+    interval: 1

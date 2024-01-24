@@ -1,0 +1,31 @@
+name: Post install
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  post_install:
+    if: ${{ github.repository	!= 'ankorstore/yokai-worker-template' }}
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+          ref: ${{ github.head_ref }}
+
+      - name: Rename
+        run: |
+          make rename to=$(echo '${{ github.repository }}' | tr '[:upper:]' '[:lower:]')
+          rm .github/workflows/post-install.yml
+
+      - name: Commit
+        uses: stefanzweifel/git-auto-commit-action@v5
+        with:
+          commit_message: "Post installation operations"
+          tagging_message: 'v0.1.0'
+          push_options: --force
