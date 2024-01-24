@@ -11,6 +11,3 @@ modules:
           expose: false
         stats:
           expose: false
-  log:
-    level: info
-    output: stdout

@@ -30,7 +30,8 @@ modules:
         modules:
           expose: true
   log:
-    level: debug
+    level: info
+    output: stdout
   trace:
     processor:
       type: noop
