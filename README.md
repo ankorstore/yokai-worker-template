@@ -70,7 +70,7 @@ make logs
 
 ### Layout
 
-This template is following the [standard go project layout](https://github.com/golang-standards/project-layout):
+This template is following the [standard Go project layout](https://github.com/golang-standards/project-layout):
 
 - `cmd/`: entry points
 - `configs/`: configuration files
@@ -81,7 +81,7 @@ This template is following the [standard go project layout](https://github.com/g
 
 ### Makefile
 
-This template provides a `Makefile`:
+This template provides a [Makefile](Makefile):
 
 ```
 make up     # start the docker compose stack
