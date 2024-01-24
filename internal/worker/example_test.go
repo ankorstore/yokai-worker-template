@@ -16,7 +16,6 @@ func TestExampleWorker(t *testing.T) {
 	var logBuffer logtest.TestLogBuffer
 	var metricsRegistry *prometheus.Registry
 
-	// test app
 	internal.RunTest(
 		t,
 		fx.Populate(

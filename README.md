@@ -7,12 +7,13 @@
 
 <!-- TOC -->
 * [Overview](#overview)
+* [Documentation](#documentation)
 * [Getting started](#getting-started)
   * [Installation](#installation)
     * [With gonew](#with-gonew)
     * [With GitHub](#with-github)
   * [Usage](#usage)
-* [Template contents](#template-contents)
+* [Contents](#contents)
   * [Layout](#layout)
   * [Makefile](#makefile)
 <!-- TOC -->
@@ -25,7 +26,9 @@ This template provides:
 - a ready to use [dev environment](docker-compose.yaml), based on [Air](https://github.com/cosmtrek/air) (for live reloading)
 - some examples of [worker](internal/worker/example.go) and [test](internal/worker/example_test.go) to get started
 
-See the [Yokai documentation](https://ankorstore.github.io/yokai) for more details.
+## Documentation
+
+See [Yokai documentation](https://ankorstore.github.io/yokai).
 
 ## Getting started
 
@@ -63,7 +66,7 @@ To see the [provided example worker](internal/worker/example.go) in action, simp
 make logs
 ```
 
-## Template contents
+## Contents
 
 ### Layout
 
@@ -74,7 +77,7 @@ This template is following the [standard go project layout](https://github.com/g
 - `internal/`:
   - `worker/`: worker and test examples
   - `bootstrap.go`: bootstrap (modules, lifecycles, etc)
-  - `services.go`: services definition
+  - `services.go`: services registration
 
 ### Makefile
 

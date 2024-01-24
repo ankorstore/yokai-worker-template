@@ -10,8 +10,14 @@ import (
 	"go.uber.org/fx"
 )
 
+func init() {
+	RootDir = fxcore.RootDir(1)
+}
+
+// RootDir is the application root directory.
 var RootDir string
 
+// Bootstrapper can be used to load modules, options, services and bootstraps your application.
 var Bootstrapper = fxcore.NewBootstrapper().WithOptions(
 	// modules
 	fxworker.FxWorkerModule,
@@ -19,14 +25,12 @@ var Bootstrapper = fxcore.NewBootstrapper().WithOptions(
 	ProvideServices(),
 )
 
-func init() {
-	RootDir = fxcore.RootDir(1)
-}
-
+// Run starts the application, with a provided [context.Context].
 func Run(ctx context.Context) {
 	Bootstrapper.WithContext(ctx).RunApp()
 }
 
+// RunTest starts the application in test mode, with an optional list of [fx.Option].
 func RunTest(tb testing.TB, options ...fx.Option) {
 	tb.Helper()
 
