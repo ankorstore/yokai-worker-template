@@ -43,16 +43,16 @@ func TestExampleWorker(t *testing.T) {
 
 	// metrics assertion
 	expectedMetric := `
-		# HELP worker_app_worker_worker_execution_total Total number of workers executions
-		# TYPE worker_app_worker_worker_execution_total counter
-		worker_app_worker_worker_execution_total{status="started",worker="example_worker"} 1
-		worker_app_worker_worker_execution_total{status="success",worker="example_worker"} 1
+		# HELP worker_executions_total Total number of workers executions
+		# TYPE worker_executions_total counter
+		worker_executions_total{status="started",worker="example_worker"} 1
+		worker_executions_total{status="success",worker="example_worker"} 1
 	`
 
 	err := testutil.GatherAndCompare(
 		metricsRegistry,
 		strings.NewReader(expectedMetric),
-		"worker_app_worker_worker_execution_total",
+		"worker_executions_total",
 	)
 	assert.NoError(t, err)
 }
