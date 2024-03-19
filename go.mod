@@ -19,7 +19,7 @@ require (
 	github.com/ankorstore/yokai/fxgenerate v1.1.0 // indirect
 	github.com/ankorstore/yokai/fxhealthcheck v1.1.0 // indirect
 	github.com/ankorstore/yokai/fxlog v1.1.0 // indirect
-	github.com/ankorstore/yokai/fxmetrics v1.1.0 // indirect
+	github.com/ankorstore/yokai/fxmetrics v1.2.0 // indirect
 	github.com/ankorstore/yokai/fxtrace v1.2.0 // indirect
 	github.com/ankorstore/yokai/generate v1.1.0 // indirect
 	github.com/ankorstore/yokai/healthcheck v1.1.0 // indirect
