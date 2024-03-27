@@ -24,10 +24,10 @@ require (
 	github.com/ankorstore/yokai/generate v1.1.0 // indirect
 	github.com/ankorstore/yokai/healthcheck v1.1.0 // indirect
 	github.com/ankorstore/yokai/httpserver v1.4.1 // indirect
-	github.com/ankorstore/yokai/trace v1.2.0 // indirect
+	github.com/ankorstore/yokai/trace v1.3.0 // indirect
 	github.com/arl/statsviz v0.6.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
-	github.com/cenkalti/backoff/v4 v4.2.1 // indirect
+	github.com/cenkalti/backoff/v4 v4.3.0 // indirect
 	github.com/cespare/xxhash/v2 v2.2.0 // indirect
 	github.com/davecgh/go-spew v1.1.2-0.20180830191138-d8f796af33cc // indirect
 	github.com/fsnotify/fsnotify v1.7.0 // indirect
