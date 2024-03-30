@@ -27,6 +27,7 @@ This template provides:
 
 - a ready to extend [Yokai](https://github.com/ankorstore/yokai) application, with the [worker](https://ankorstore.github.io/yokai/modules/fxworker/) module installed
 - a ready to use [dev environment](docker-compose.yaml), based on [Air](https://github.com/cosmtrek/air) (for live reloading)
+- a ready to use [Dockerfile](Dockerfile) for production
 - some examples of [worker](internal/worker/example.go) and [test](internal/worker/example_test.go) to get started
 
 ### Layout
