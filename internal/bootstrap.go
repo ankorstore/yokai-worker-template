@@ -21,7 +21,7 @@ var RootDir string
 var Bootstrapper = fxcore.NewBootstrapper().WithOptions(
 	// modules registration
 	fxworker.FxWorkerModule,
-	// dependencies registrations
+	// dependencies registration
 	Register(),
 )
 
