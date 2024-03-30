@@ -6,16 +6,20 @@
 > Worker application template based on the [Yokai](https://github.com/ankorstore/yokai) Go framework.
 
 <!-- TOC -->
+* [Documentation](#documentation)
 * [Overview](#overview)
   * [Layout](#layout)
   * [Makefile](#makefile)
-* [Documentation](#documentation)
 * [Getting started](#getting-started)
   * [Installation](#installation)
     * [With GitHub](#with-github)
     * [With gonew](#with-gonew)
   * [Usage](#usage)
 <!-- TOC -->
+
+## Documentation
+
+For more information about the [Yokai](https://github.com/ankorstore/yokai) framework, you can check the online [documentation](https://ankorstore.github.io/yokai).
 
 ## Overview
 
@@ -48,10 +52,6 @@ make fresh  # refresh the docker compose stack
 make test   # run tests
 make lint   # run linter
 ```
-
-## Documentation
-
-See [Yokai documentation](https://ankorstore.github.io/yokai).
 
 ## Getting started
 
