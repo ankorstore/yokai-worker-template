@@ -17,12 +17,12 @@ func init() {
 // RootDir is the application root directory.
 var RootDir string
 
-// Bootstrapper can be used to load modules, options, services and bootstraps your application.
+// Bootstrapper can be used to load modules, options, dependencies and bootstraps your application.
 var Bootstrapper = fxcore.NewBootstrapper().WithOptions(
-	// modules
+	// modules registration
 	fxworker.FxWorkerModule,
-	// services
-	ProvideServices(),
+	// dependencies registrations
+	Register(),
 )
 
 // Run starts the application, with a provided [context.Context].

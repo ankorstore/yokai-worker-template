@@ -33,8 +33,8 @@ This template is following the [recommended project layout](https://go.dev/doc/m
 - `configs/`: configuration files
 - `internal/`:
   - `worker/`: worker and test examples
-  - `bootstrap.go`: bootstrap (modules, lifecycles, etc)
-  - `services.go`: services registration
+  - `bootstrap.go`: bootstrap
+  - `register.go`: dependencies registration
 
 ### Makefile
 
