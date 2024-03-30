@@ -7,15 +7,14 @@
 
 <!-- TOC -->
 * [Overview](#overview)
+  * [Layout](#layout)
+  * [Makefile](#makefile)
 * [Documentation](#documentation)
 * [Getting started](#getting-started)
   * [Installation](#installation)
     * [With GitHub](#with-github)
     * [With gonew](#with-gonew)
   * [Usage](#usage)
-* [Contents](#contents)
-  * [Layout](#layout)
-  * [Makefile](#makefile)
 <!-- TOC -->
 
 ## Overview
@@ -25,6 +24,30 @@ This template provides:
 - a ready to extend [Yokai](https://github.com/ankorstore/yokai) application, with the [fxworker](https://github.com/ankorstore/yokai/tree/main/fxworker) module installed
 - a ready to use [dev environment](docker-compose.yaml), based on [Air](https://github.com/cosmtrek/air) (for live reloading)
 - some examples of [worker](internal/worker/example.go) and [test](internal/worker/example_test.go) to get started
+
+### Layout
+
+This template is following the [recommended project layout](https://go.dev/doc/modules/layout):
+
+- `cmd/`: entry points
+- `configs/`: configuration files
+- `internal/`:
+  - `worker/`: worker and test examples
+  - `bootstrap.go`: bootstrap (modules, lifecycles, etc)
+  - `services.go`: services registration
+
+### Makefile
+
+This template provides a [Makefile](Makefile):
+
+```
+make up     # start the docker compose stack
+make down   # stop the docker compose stack
+make logs   # stream the docker compose stack logs
+make fresh  # refresh the docker compose stack
+make test   # run tests
+make lint   # run linter
+```
 
 ## Documentation
 
@@ -64,30 +87,4 @@ To see the [provided example worker](internal/worker/example.go) in action, simp
 
 ```shell
 make logs
-```
-
-## Contents
-
-### Layout
-
-This template is following the [standard Go project layout](https://github.com/golang-standards/project-layout):
-
-- `cmd/`: entry points
-- `configs/`: configuration files
-- `internal/`:
-  - `worker/`: worker and test examples
-  - `bootstrap.go`: bootstrap (modules, lifecycles, etc)
-  - `services.go`: services registration
-
-### Makefile
-
-This template provides a [Makefile](Makefile):
-
-```
-make up     # start the docker compose stack
-make down   # stop the docker compose stack
-make logs   # stream the docker compose stack logs
-make fresh  # refresh the docker compose stack
-make test   # run tests
-make lint   # run linter
 ```
