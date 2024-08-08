@@ -3,27 +3,27 @@ module github.com/ankorstore/yokai-worker-template
 go 1.22
 
 require (
-	github.com/ankorstore/yokai/config v1.3.0
-	github.com/ankorstore/yokai/fxcore v1.7.0
+	github.com/ankorstore/yokai/config v1.4.0
+	github.com/ankorstore/yokai/fxcore v1.9.0
 	github.com/ankorstore/yokai/fxworker v1.1.0
 	github.com/ankorstore/yokai/log v1.2.0
-	github.com/ankorstore/yokai/worker v1.1.0
-	github.com/prometheus/client_golang v1.19.0
-	github.com/spf13/cobra v1.8.0
+	github.com/ankorstore/yokai/worker v1.2.0
+	github.com/prometheus/client_golang v1.19.1
+	github.com/spf13/cobra v1.8.1
 	github.com/stretchr/testify v1.9.0
-	go.uber.org/fx v1.21.0
+	go.uber.org/fx v1.22.2
 )
 
 require (
-	github.com/ankorstore/yokai/fxconfig v1.1.0 // indirect
-	github.com/ankorstore/yokai/fxgenerate v1.1.0 // indirect
+	github.com/ankorstore/yokai/fxconfig v1.2.0 // indirect
+	github.com/ankorstore/yokai/fxgenerate v1.2.0 // indirect
 	github.com/ankorstore/yokai/fxhealthcheck v1.1.0 // indirect
 	github.com/ankorstore/yokai/fxlog v1.1.0 // indirect
 	github.com/ankorstore/yokai/fxmetrics v1.2.0 // indirect
 	github.com/ankorstore/yokai/fxtrace v1.2.0 // indirect
-	github.com/ankorstore/yokai/generate v1.1.0 // indirect
+	github.com/ankorstore/yokai/generate v1.2.0 // indirect
 	github.com/ankorstore/yokai/healthcheck v1.1.0 // indirect
-	github.com/ankorstore/yokai/httpserver v1.4.1 // indirect
+	github.com/ankorstore/yokai/httpserver v1.5.0 // indirect
 	github.com/ankorstore/yokai/trace v1.3.0 // indirect
 	github.com/arl/statsviz v0.6.0 // indirect
 	github.com/beorn7/perks v1.0.1 // indirect
@@ -70,7 +70,7 @@ require (
 	go.opentelemetry.io/otel/sdk v1.24.0 // indirect
 	go.opentelemetry.io/otel/trace v1.24.0 // indirect
 	go.opentelemetry.io/proto/otlp v1.1.0 // indirect
-	go.uber.org/dig v1.17.1 // indirect
+	go.uber.org/dig v1.18.0 // indirect
 	go.uber.org/multierr v1.11.0 // indirect
 	go.uber.org/zap v1.27.0 // indirect
 	golang.org/x/crypto v0.22.0 // indirect
