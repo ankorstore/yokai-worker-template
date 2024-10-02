@@ -1,8 +1,8 @@
 # Yokai Worker Template
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Documentation](https://img.shields.io/badge/Doc-online-cyan)](https://ankorstore.github.io/yokai/)
 [![Go version](https://img.shields.io/badge/Go-1.23-blue)](https://go.dev/)
+[![Documentation](https://img.shields.io/badge/Doc-online-cyan)](https://ankorstore.github.io/yokai/)
 
 > Worker application template based on the [Yokai](https://github.com/ankorstore/yokai) Go framework.
 
