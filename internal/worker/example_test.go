@@ -1,10 +1,13 @@
 package worker_test
 
 import (
+	"fmt"
 	"strings"
 	"testing"
+	"time"
 
 	"github.com/ankorstore/yokai-worker-template/internal"
+	"github.com/ankorstore/yokai/fxconfig"
 	"github.com/ankorstore/yokai/log/logtest"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/testutil"
@@ -16,15 +19,20 @@ func TestExampleWorker(t *testing.T) {
 	var logBuffer logtest.TestLogBuffer
 	var metricsRegistry *prometheus.Registry
 
-	internal.RunTest(
+	// bootstrap test app
+	app := internal.Bootstrapper.BootstrapTestApp(
 		t,
-		fx.Populate(
-			&logBuffer,
-			&metricsRegistry,
-		),
+		fxconfig.AsConfigPath(fmt.Sprintf("%s/configs/", internal.RootDir)),
+		fx.Populate(&logBuffer, &metricsRegistry),
 	)
 
-	// logs assertion
+	// start test app
+	app.RequireStart()
+
+	// give time to worker to start
+	time.Sleep(1 * time.Millisecond)
+
+	// run log assertion
 	logtest.AssertHasLogRecord(t, logBuffer, map[string]interface{}{
 		"level":   "info",
 		"service": "worker-app",
@@ -33,6 +41,13 @@ func TestExampleWorker(t *testing.T) {
 		"message": "running",
 	})
 
+	// stop test app
+	app.RequireStop()
+
+	// give time to worker to stop
+	time.Sleep(1 * time.Millisecond)
+
+	// stop log assertion
 	logtest.AssertHasLogRecord(t, logBuffer, map[string]interface{}{
 		"level":   "info",
 		"service": "worker-app",
